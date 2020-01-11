@@ -85,10 +85,9 @@ class Index extends React.Component {
               </li>
               <li>
                 <span className="icon major style5 fa-diamond"></span>
-                <h3>Dolor nullam</h3>
+                <h3>Efficiency Expert</h3>
                 <p>
-                  Sed lorem amet ipsum dolor et amet nullam consequat a feugiat
-                  consequat tempus veroeros sed consequat.
+                  Clean code. Attention to detail. Clear communication. 
                 </p>
               </li>
             </ul>
