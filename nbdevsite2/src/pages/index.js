@@ -6,6 +6,7 @@ import pic01 from '../assets/images/pic01.jpg'
 import Header from '../components/Header'
 import Layout from '../components/layout'
 import Nav from '../components/Nav'
+import Blog from '../components/Blog'
 
 class Index extends React.Component {
   constructor(props) {
@@ -124,7 +125,7 @@ class Index extends React.Component {
             <header className="major">
               <h2>Blog</h2>
             </header>
-            <p>insert blog component</p>
+            <Blog />
             <ul className="actions">
                 
               </ul>
