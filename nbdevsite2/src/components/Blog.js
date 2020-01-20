@@ -1,25 +1,29 @@
 import React from "react"
-import { graphql } from "gatsby"
+import { useStaticQuery, graphql } from "gatsby"
 
-
-
-export default ({ data }) => {
+const Blog = () => {
+    const data = useStaticQuery(graphql`
+    {
+      allWordpressPost(limit: 3) {
+        edges {
+          node {
+            slug
+            excerpt
+            link
+          }
+        }
+      }
+    }
+  `)
+    // debugger
+    const posts = data.allWordpressPost.edges.map (edge => {
+        const { slug, excerpt, link } = edge.node 
+        
+    });
     debugger
     return (
         <div></div>
     )
 }
 
-export const pageQuery = graphql`
-  query {
-    allWordpressPost(sort: { fields: [date] }) {
-      edges {
-        node {
-          title
-          excerpt
-          slug
-        }
-      }
-    }
-  }
-`
+export default Blog
