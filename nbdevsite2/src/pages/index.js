@@ -6,7 +6,7 @@ import pic01 from '../assets/images/pic01.jpg'
 import Header from '../components/Header'
 import Layout from '../components/layout'
 import Nav from '../components/Nav'
-import Blog from '../components/Blog'
+
 
 class Index extends React.Component {
   constructor(props) {
@@ -63,7 +63,7 @@ class Index extends React.Component {
             </div>
           </section>
 
-          <section id="first" className="main special">
+          <section id="skills" className="main special">
             <header className="major">
               <h2>Skills</h2>
             </header>
@@ -97,7 +97,7 @@ class Index extends React.Component {
             </footer>
           </section>
 
-          <section id="second" className="main special">
+          <section id="projects" className="main special">
             <header className="major">
               <h2>Projects</h2>
               <p>
@@ -125,7 +125,6 @@ class Index extends React.Component {
             <header className="major">
               <h2>Blog</h2>
             </header>
-            <Blog />
             <ul className="actions">
                 
               </ul>

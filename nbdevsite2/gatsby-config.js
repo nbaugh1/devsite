@@ -6,7 +6,17 @@ module.exports = {
   siteMetadata: {
     title: "Nick Baughman, Software Developer",
     author: "Nick Baughman",
-    description: "Personal website for Nick Baughman"
+    description: "Personal website for Nick Baughman",
+    social: [
+      {
+        name: `Twitter`,
+        url: `https://twitter.com/nbaugh1`,
+      },
+      {
+        name: `GitHub`,
+        url: `https://github.com/nbaugh1`,
+      },
+    ],
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -31,25 +41,12 @@ module.exports = {
         icon: 'src/assets/images/website-icon.png', // This path is relative to the root of the site.
       },
     },
-
     {
-      resolve: `gatsby-source-wordpress`,
+      resolve: `gatsby-theme-blog`,
       options: {
-        /*
-         * The base URL of the WordPress site without the trailingslash and the protocol. This is required.
-         * Example : 'dev-gatbsyjswp.pantheonsite.io' or 'www.example-site.com'
-         */
-        baseUrl: `npbdev.wordpress.com`,
-        // The protocol. This can be http or https.
-        protocol: `http`,
-        // Indicates whether the site is hosted on wordpress.com.
-        // If false, then the assumption is made that the site is self hosted.
-        // If true, then the plugin will source its content on wordpress.com using the JSON REST API V2.
-        // If your site is hosted on wordpress.org, then set this to false.
-        hostingWPCOM: true,
-        // If useACF is true, then the source plugin will try to import the WordPress ACF Plugin contents.
-        // This feature is untested for sites hosted on WordPress.com
-        useACF: true,
+        // basePath defaults to `/`
+        basePath: `/blog`,
+        contentPath: '/Users/Nick/Development/nbdevsite2/content/posts'
       },
     },
     'gatsby-plugin-sass',
