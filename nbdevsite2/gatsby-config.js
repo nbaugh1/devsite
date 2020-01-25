@@ -46,7 +46,8 @@ module.exports = {
       options: {
         // basePath defaults to `/`
         basePath: `/blog`,
-        contentPath: '/Users/Nick/Development/nbdevsite2/content/posts'
+        contentPath: '/Users/Nick/Development/nbdevsite2/content/posts',
+        mdx: true
       },
     },
     'gatsby-plugin-sass',
