@@ -125,9 +125,16 @@ class Index extends React.Component {
             <header className="major">
               <h2>Blog</h2>
             </header>
-            <ul className="actions">
-                
-              </ul>
+
+            <p className="content">
+            <ul>
+            <li>
+              <Link to="/blog" className="button">
+              Read More
+              </Link>
+             </li>     
+            </ul>
+            </p>
           </section>
 
           <section id="cta" className="main special">
@@ -138,7 +145,7 @@ class Index extends React.Component {
                 <br />
                 GitHun: nbaugh1
                 <br />
-                Twitter: nbaugh1
+                Twitter: 
                 <br />
               </p>
             </header>

@@ -23,44 +23,29 @@ const Footer = props => (
       <h2>Etiam feugiat</h2>
       <dl className="alt">
         <dt>Address</dt>
-        <dd>1234 Somewhere Road &bull; Nashville, TN 00000 &bull; USA</dd>
+        <dd>808 Myrtle Ave Apt 2C &bull; Brooklyn, NY 11206 &bull; USA</dd>
         <dt>Phone</dt>
-        <dd>(000) 000-0000 x 0000</dd>
+        <dd>(225) 247-4814 </dd>
         <dt>Email</dt>
         <dd>
-          <a href="https://codebushi.com">information@untitled.tld</a>
+          nbaugh1@gmail.com
         </dd>
       </dl>
       <ul className="icons">
         <li>
           <a
-            href="https://twitter.com/huntaroSan"
+            href="https://twitter.com/nbaugh1"
             className="icon fa-twitter alt"
           >
             <span className="label">Twitter</span>
           </a>
         </li>
         <li>
-          <a href="https://codebushi.com" className="icon fa-facebook alt">
-            <span className="label">Facebook</span>
-          </a>
-        </li>
-        <li>
-          <a href="https://codebushi.com" className="icon fa-instagram alt">
-            <span className="label">Instagram</span>
-          </a>
-        </li>
-        <li>
           <a
-            href="https://github.com/codebushi/gatsby-starter-stellar"
+            href="https://github.com/nbaugh1"
             className="icon fa-github alt"
           >
             <span className="label">GitHub</span>
-          </a>
-        </li>
-        <li>
-          <a href="https://codebushi.com" className="icon fa-dribbble alt">
-            <span className="label">Dribbble</span>
           </a>
         </li>
       </ul>
